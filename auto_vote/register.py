@@ -9,6 +9,7 @@ driver.set_window_size(1124, 850) # set browser size.
 
 driver.get("http://scottiestreesrock.com");
 start_time = time.time()
+votes = 0
 
 try:
     with open('emails.txt') as thefile:
@@ -36,6 +37,7 @@ try:
                     continue_link = driver.find_element_by_link_text('Home')
                     continue_link.click()
                     print "Voted successfully: " + line.strip()
+                    votes += 1
                 except NoSuchElementException:
                     print "Error: Not on thank you page"
                     break
@@ -49,4 +51,6 @@ except:
     end_time = time.time()
 
 print( "Total time: " + str( end_time - start_time ) + " seconds")
+print( "Total votes: " + str( votes ) )
+
 driver.close
