@@ -3,9 +3,9 @@ import time
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 
-driver = webdriver.PhantomJS(service_args=['--ssl-protocol=any'])
-driver.set_window_size(1124, 850) # set browser size.
-# driver = webdriver.Chrome();
+#driver = webdriver.PhantomJS(service_args=['--ssl-protocol=any'])
+#driver.set_window_size(1124, 850) # set browser size.
+driver = webdriver.Chrome();
 
 driver.get("http://scottiestreesrock.com");
 start_time = time.time()
@@ -16,6 +16,7 @@ try:
         for line in thefile:
 
             # ENTER EMAIL ADDRESS
+            driver.find_element_by_id("email").clear()
             driver.find_element_by_id("email").send_keys( line.strip() )
 
             # AGREE
@@ -53,4 +54,4 @@ except:
 print( "Total time: " + str( end_time - start_time ) + " seconds")
 print( "Total votes: " + str( votes ) )
 
-driver.close
+#driver.close
