@@ -19,10 +19,11 @@ brew install zsh
 
 # Git
 brew install git
+mv ./gitignore ~/.gitignore
+git config --global core.excludesfile ~/.gitignore
 
 # iTerm2
 brew install tmux
-brew cask install meld # diff tool
 brew cask install iterm2
 brew cask install slack
 brew cask install atom
