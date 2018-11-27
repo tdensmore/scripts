@@ -19,8 +19,8 @@ brew install zsh
 
 # Git
 brew install git
-mv ./gitignore ~/.gitignore
-git config --global core.excludesfile ~/.gitignore
+mv ./gitignore_global ~/.gitignore_global
+git config --global core.excludesfile ~/.gitignore_global
 
 # iTerm2
 brew install tmux
