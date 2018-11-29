@@ -23,18 +23,24 @@ mv ./gitignore_global ~/.gitignore_global
 git config --global core.excludesfile ~/.gitignore_global
 
 # iTerm2
+brew intall awscli
 brew install tmux
 brew cask install iterm2
 brew cask install slack
 brew cask install atom
 brew cask install dropbox
 brew cask install 1password
-brew cask install keepingyouawake
+brew cask install keepingyouawake # dont use amphetamine
 brew cask install appcleaner
 brew cask install docker
 brew cask install google-chrome
+brew cask install simplenote # free cross platform notes
 brew cask install virtualbox
 brew cask install virtualbox-extension-pack
+brew cask install diffmerge
+brew cask install little-snitch
+brew cask install viscosity
+brew cask install flux
 # iso
 # http://releases.ubuntu.com/18.04.1/ubuntu-18.04.1-live-server-amd64.iso?_ga=2.124398850.948042938.1543251609-1439906146.1543251609
 
@@ -51,6 +57,8 @@ cp -r /RedPill.saver/. ~/Library/Screen\ Savers/
 # InkScape
 
 # move ssh keys
+
+# aws credentials
 
 # Remove install files
 brew cleanup
