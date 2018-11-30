@@ -3,20 +3,15 @@
 
 # FONTS - ~/Library/Fonts https://wesbos.com/programming-fonts/
 brew tap caskroom/fonts
-## Iconsolata
 brew cask install font-inconsolata font-inconsolata-for-powerline
-## Source Code Pro
 brew cask install font-source-code-pro font-source-code-pro-for-powerline
-## ANONYMOUS PRO
 brew cask install font-anonymous-pro
-## Hermit
 brew cask install font-hermit
-## Ubuntu
 brew cask install font-ubuntu
 
 # Zshell
 brew install zsh
-
+brew install gpg
 # Git
 brew install git
 mv ./gitignore_global ~/.gitignore_global
