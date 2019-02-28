@@ -8,6 +8,7 @@ brew cask install font-source-code-pro font-source-code-pro-for-powerline
 brew cask install font-anonymous-pro
 brew cask install font-hermit
 brew cask install font-ubuntu
+brew cask install font-hack-nerd-font
 
 # Zshell
 brew install zsh
