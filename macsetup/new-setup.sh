@@ -3,6 +3,8 @@
 
 # FONTS - ~/Library/Fonts https://wesbos.com/programming-fonts/
 brew tap caskroom/fonts
+brew tap sambadevi/powerlevel9k
+
 brew cask install font-inconsolata font-inconsolata-for-powerline
 brew cask install font-source-code-pro font-source-code-pro-for-powerline
 brew cask install font-anonymous-pro
@@ -13,6 +15,8 @@ brew cask install font-hack-nerd-font
 # Zshell
 brew install zsh
 brew install gpg
+brew install powerlevel9k
+
 # Git
 brew install git
 mv ./gitignore_global ~/.gitignore_global
